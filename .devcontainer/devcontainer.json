@@ -1,0 +1,25 @@
+{
+  "name": "ao-ringo-player",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        // "rifi2k.format-html-in-php",
+        "mrmlnc.vscode-csscomb",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-complete-tag",
+        "bradgashler.htmltagwrap",
+        "vue.volar",
+        "google.geminicodeassist",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  },
+  "shutdownAction": "stopCompose" // or "none"
+}
