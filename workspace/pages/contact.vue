@@ -110,7 +110,8 @@
 
 <script lang="ts" setup>
 import axios from 'axios'
-import { ref } from 'vue'
+
+const config = useRuntimeConfig()
 
 const initialFormData = {
   name: '',
@@ -127,7 +128,7 @@ const showError = ref(false)
 
 const submitForm = async () => {
   isSubmitting.value = true
-  const API_URL = import.meta.env.VITE_API_URL
+  const API_URL = config.public.apiUrl
 
   const params = new URLSearchParams()
   params.append('name', formData.value.name)
@@ -143,14 +144,12 @@ const submitForm = async () => {
 
     if (response.data.status === 'success') {
       resetForm()
-      // アラートを表示して5秒後に消す
       showSuccess.value = true
       setTimeout(() => {
         showSuccess.value = false
       }, 5000)
     }
   } catch (error) {
-    // アラートを表示して5秒後に消す
     showError.value = true
     setTimeout(() => {
       showError.value = false

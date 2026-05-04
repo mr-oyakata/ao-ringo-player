@@ -5,4 +5,4 @@ WORKDIR /workspace
 COPY ./workspace/package.json ./
 COPY ./workspace/yarn.lock ./
 
-RUN yarn install
+RUN yarn install --frozen-lockfile

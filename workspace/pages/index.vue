@@ -15,16 +15,15 @@
       </div>
     </div>
     <div>
-      <PrivacyPolicyEnglish v-if="showEnglish"></PrivacyPolicyEnglish>
-      <PrivacyPolicyJapanese v-else></PrivacyPolicyJapanese>
+      <PrivacyPolicyEnglish v-if="showEnglish" />
+      <PrivacyPolicyJapanese v-else />
     </div>
   </article>
 </template>
 
 <script lang="ts" setup>
-import PrivacyPolicyEnglish from '@/components/PrivacyPolicyEnglish.vue'
-import PrivacyPolicyJapanese from '@/components/PrivacyPolicyJapanese.vue'
-import { ref } from 'vue'
-
-const showEnglish = ref(!navigator.language.startsWith('ja'))
+const showEnglish = ref(false)
+onMounted(() => {
+  showEnglish.value = !navigator.language.startsWith('ja')
+})
 </script>

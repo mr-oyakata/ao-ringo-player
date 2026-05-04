@@ -153,10 +153,10 @@
 
     <h2 class="border-base-300 mt-10 mb-4 border-b pb-1 text-xl font-bold">8. Contact Us</h2>
     <p class="mb-4">
-      <RouterLink
+      <NuxtLink
         to="/contact"
         class="link link-primary font-medium text-emerald-500 hover:text-emerald-600"
-        >https://mr-oyakata.github.io/ao-ringo-player/contact</RouterLink
+        >https://mr-oyakata.github.io/ao-ringo-player/contact</NuxtLink
       >
     </p>
   </article>

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(yarn install *)",
+      "Bash(yarn generate *)",
+      "Bash(fuser /workspace/dist)",
+      "Bash(yarn dev *)",
+      "Bash(xargs ls *)",
+      "Bash(yarn build *)",
+      "Bash(kill %1)",
+      "Bash(wait %1)",
+      "Bash(python3 -m json.tool)"
+    ]
+  }
+}
