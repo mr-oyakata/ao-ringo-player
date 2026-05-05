@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     baseURL: '/ao-ringo-player/',
     head: {
       title: 'AO-ringo Player',
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
   runtimeConfig: {
