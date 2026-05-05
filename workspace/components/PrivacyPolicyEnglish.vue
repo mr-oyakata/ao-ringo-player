@@ -6,7 +6,7 @@
     <p class="mb-4 text-sm opacity-70">Last Updated: April 25, 2026</p>
     <p class="mb-6 leading-relaxed">
       This Privacy Policy (hereinafter referred to as "this Policy") sets forth the handling of user
-      information by Mr.Oyakata (hereinafter referred to as "the Developer") in the iOS application
+      information by Mr.OYAKATA (hereinafter referred to as "the Developer") in the iOS application
       "AO-ringo Player" (hereinafter referred to as "this App"). Please read this Policy carefully
       and agree to its contents before using this App.
     </p>

@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   app: {
     baseURL: '/ao-ringo-player/',
+    head: {
+      title: 'AO-ringo Player',
+    },
   },
   runtimeConfig: {
     public: {
