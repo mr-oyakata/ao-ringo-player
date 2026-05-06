@@ -4,3 +4,9 @@
     light --default,
     dark --prefersdark;
 }
+@theme {
+  --font-sans:
+    'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP',
+    sans-serif;
+  /* --font-mono: 'Consolas', 'monaco', monospace; */
+}
